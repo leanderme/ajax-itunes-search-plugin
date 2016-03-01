@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+	<title>Ajax iTunes Search - Ajax Powered Search Engine</title>
+ 	<meta name="description" content="">
+	<meta name="author" content="Leander Melms">
+	<meta name="copyright" content="Leander Melms">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2013-07-25T00:00:00+02:00">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/documenter_style.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    
+	
+	<style>
+		html, body{background-color:#FFFFFF;color:#383838;}
+		h1,h2,h3,h4,h5,h6{color:#383838;}
+		section table{background-color:#FFFFFF;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		a.brand{background-image:url();}
+		a, a:hover, a:active{color:#0000FF;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		div.navbar-inner, .navbar .nav li ul{background:#DDDDDD;color:#222222;}
+		a.btn-navbar{background:#DDDDDD;color:#222222;}
+		.navbar .nav li a{color:#222222;text-shadow:1px 1px 0px #EEEEEE;}
+		.navbar .nav li a:hover, .navbar .nav li.active a{text-shadow:none;}
+		div.navbar-inner ul{}
+		.marketing-byline{color:#FFFFFF;}
+		.navbar .nav > li a{color:#444444;}
+		.navbar .nav > li a:hover, a.btn-navbar:hover{background:#444444;color:#DDDDDD;}
+		.navbar .nav .active > a, .navbar .nav .active > a:hover, a.btn-navbar:active{background-color:#444444;color:#DDDDDD;}
+		.navbar .nav li ul li a:hover{background:#444444;color:#DDDDDD;}
+		.navbar .nav li ul li a:active{background:#444444;color:#DDDDDD;}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  background-color: #0044CC;
+		}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+	
+	
+    </head>
+    
+<body class="documenter-project-ajax-itunes-search" data-spy="scroll" id="top">
+
+<!-- Documentation Navbar -->
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container"> 
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+			<a class="brand" href="#">Ajax iTunes Search - Ajax Powered Search Engine</a>
+			<div class="nav-collapse">
+			<ul class="nav">
+					
+			<li><a href="#installation" title="Installation">Installation</a>
+				<ul>
+					<li><a href="#installation_default_installation_nbsp">Default Installation&nbsp;</a>
+				</ul>
+			</li>
+			<li><a href="#setup" title="Setup">Setup</a></li>
+			<li><a href="#admin_configuration" title="Admin Configuration">Admin Configuration</a></li>
+			<li><a href="#tracks" title="Tracks">Tracks</a></li>
+			<li><a href="#advanced" title="Advanced">Advanced</a></li>
+			<li><a href="#legal" title="Legal">Legal</a></li>
+
+			</ul>
+			</div>
+		</div>
+	</div>
+</div> <!-- End of Navbar -->
+
+<!-- Main Container Beginning -->			
+			
+<div class="container" id="documenter_content">
+    
+	<div id="documenter-cover">
+	<div class="masthead">
+	    <h1>Ajax iTunes Search - Ajax Powered Search Engine</h1>
+	    <p></p>
+	    <ul class="marketing-byline">
+			<li>created: 07/24/2013</li>
+			<li>latest update: 07/25/2013</li>
+			<li>by: Leander Melms</li>
+			<li><a href="http://leandermelms.me/">leandermelms.me/</a></li>
+		</ul>
+	    <p class="download-info">
+			
+		</p>
+		
+	</div> <!-- masthead -->
+	
+   <div id="intro">
+    <p class="highlight hero-unit">Thank you for purchasing my plugin. If you have any questions that are beyond the scope of this help file, please feel free to open a ticket on my support site. Thanks so much!
+
+Support: http://leandermelms.me/support/</p>
+   </div> <!-- intro -->
+   
+	</div>
+      
+  <section id="installation">
+	<div class="page-header"><h3>Installation</h3><hr class="notop"></div>
+<h4 id="installation_default_installation_nbsp">Default Installation&nbsp;</h4>
+<div style="color: rgb(56, 56, 56); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">
+	First head over to your wp-admin/plugins section to install your brand new WordPress plugin. Next, click on the tab &quot;Upload&quot; and press &quot;Install Now&quot; right below.</div>
+<div style="color: rgb(56, 56, 56); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">
+	<img alt="" src="assets/images/image_7.png" style="width: 643px; height: 367px;"><br>
+	<br>
+	You should now be able to select the main compressed plugin folder.&nbsp;<strong>Note:</strong>&nbsp;The folder must be uploaded in .zip format, so do not extract it&#39;s content to install the plugin. As always, feel free to contact me whenever you experience any issues concerning your plugin.<br>
+	<br>
+	Continue by activating the plugin. All done!<br>
+	<br>
+	<img alt="" src="assets/images/image_1.png" style="width: 983px; height: 380px;"></div>
+<div style="color: rgb(56, 56, 56); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">
+	&nbsp;</div>
+<div style="color: rgb(56, 56, 56); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">
+	&nbsp;</div>
+<div style="color: rgb(56, 56, 56); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">
+	&nbsp;</div>
+<h3 style="margin: 2em 0px 10px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.2em; color: rgb(56, 56, 56); text-rendering: optimizelegibility; font-size: 2em; padding: 0px; clear: both;">
+	Install via FTP</h3>
+<div style="color: rgb(56, 56, 56); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">
+	To install a plugin correctly, you MUST UNZIP the file provided by CodeCanyon.</div>
+<ol style="padding-right: 0px; padding-left: 0px; margin: 0px 0px 10px 25px; color: rgb(56, 56, 56); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">
+	<li>
+		Locate the plugin folder</li>
+	<li>
+		The correct plugin folder with have the init.php file within the root. i.e. /init.php</li>
+	<li>
+		Open your FTP client and connect to your server.&nbsp;</li>
+	<li>
+		Locate the plugins directory e.g. &#39;/wp-content/plugins/&#39;</li>
+	<li>
+		Upload the plugin folder to this directory</li>
+	<li>
+		Log into the WordPress admin, go to Plugins and activate the plugin.</li>
+</ol>
+</section>
+<section id="setup">
+	<div class="page-header"><h3>Setup</h3><hr class="notop"></div>
+<p>
+	Ajax iTunes Search requires almost no configuration to set it up. In fact, only one page needs to be created and the Ajax iTunes Search Widget needs to be placed in a sidebar.&nbsp;</p>
+<p>
+	&nbsp;</p>
+<h2>
+	Understanding the functionality</h2>
+<p>
+	Ajax iTunes Search makes use of the iTunes Search API, i.e. it retrieves all data directly from the iTunes database. Upon track submission, the requested data is passed to the custom post type &quot;track&quot;. This is done - &nbsp;like the actual search process - without page refresh and allows submitting tracks in less time. Beside the data provided by the user (such as &quot;genres&quot; or &quot;tags&quot;), Ajax iTunes Search automatically assigns the track to the respective artist and kind (which either is &quot;song&quot; or a &quot;musicVideo&quot;).</p>
+<p>
+	This information is assigned to custom taxonomies, which makes it easy to filter them accordingly (e.g. when searching tracks, all tracks of the artist &quot;Avicii&quot; could be displayed).&nbsp;</p>
+<h2>
+	Creating a Track List Page</h2>
+<p>
+	To actually display your tracks, it is recommended to create a page, adding the following shortcode:</p>
+<pre class="prettyprint lang-html linenums">
+[all-tracks]</pre>
+<p>
+	<img alt="" src="assets/images/image_8.png" style="width: 1038px; height: 273px;"><br>
+	<br>
+	This shortcode retrieves all data of the custom post type &quot;track&quot; and displays them by default in two columns. Continue by publishing the page.
+	Additionally, since version 2.0, a new shortcode helper is available, which is located at the visual tab of the tinyMCE editor (small icon).
+	<img alt="" src="assets/images/image_10.png" style="width: 1038px; height: 273px;"><br>
+</p>
+
+<p>
+	&nbsp;</p>
+<h2>
+	Adding the Search Form</h2>
+<p>
+	As explained above, the Ajax iTunes Search Widget needs to be placed in a sidebar of your coice to let users submit tracks. To add the widget:</p>
+<ol>
+	<li>
+		Go to Appearance &gt; Widgets</li>
+	<li>
+		Locate the iTunes Live Post Widget</li>
+	<li>
+		Insert it in a sidebar (using drag &amp; drop)</li>
+</ol>
+<p>
+	<img alt="" src="assets/images/image_9.png" style="width: 308px; height: 313px;"></p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="admin_configuration">
+	<div class="page-header"><h3>Admin Configuration</h3><hr class="notop"></div>
+<p>
+	Ajax iTunes Search can modified with ease to meet your requirements. To do so:</p>
+<ol>
+	<li>
+		Navigate to the WordPress backend</li>
+	<li>
+		Find the menu element &quot;ITLP&quot; and click on it</li>
+	<li>
+		Choose which section you like to have access to (e.g. &quot;General Settings&quot;, &quot;Styling&quot;, &quot;Social Settings&quot;)</li>
+</ol>
+<p>
+	&nbsp;</p>
+<h2>
+	General Settings</h2>
+<p>
+	The general settings take effect on the functionality of the plugin and is the most important.<br>
+	<br>
+	<img alt="" src="assets/images/image_4.png" style="width: 587px; height: 374px;"><br>
+	<br>
+	<br>
+	<br>
+	To start with, you should most likely only allow logged in users submitting tracks. To further improve security, the post status of submitted tracks should be set to &quot;draft&quot;, giving the site administrator(s) the opportunity to check all submitted tracks before they are actually being displayed.&nbsp;</p>
+<h2>
+	<br>
+	<br>
+	Styling Options</h2>
+<p>
+	To change the front end appearance of the plugin, click on the &quot;Styling&quot; tab. Next, you should see a few input fields with descriptions to their left. To change a color of an input field, simply click on it and select the color you like. Once you&#39;re done, don&#39;t forget to update your settings.&nbsp;<br>
+	<br>
+	<img alt="" src="assets/images/image_6.png" style="width: 853px; height: 397px;"></p>
+<p>
+	&nbsp;
+</p>
+
+</section>
+<section id="tracks">
+	<div class="page-header"><h3>Tracks</h3><hr class="notop"></div>
+<p>
+	All submitted tracks are stored in a &quot;custom post type&quot;. To edit / review your tracks, head over to the WordPress dashboard and click on the &quot;Tracks&quot; menu element.&nbsp;</p>
+<p>
+	<img alt="" src="assets/images/image_2.png" style="font-size: 12px;"></p>
+<p>
+	<br>
+	All tracks are listed in this admin page. Published tracks will appear green, drafts (hold for review) in yellow.&nbsp;<br>
+	To edit a track, simply click on it and change the information.
+</p>
+<p>
+	<br>
+	Since version 2 tracks can be assigned as "featured" via the admin panel. This option will add a star banner to indicate that the track at question is worth having a closer look on. It is a way of recommending tracks. 
+	<br>
+	To do so, just check the checkbox at the bottom of a track labeled "Featured Track?".
+</p>
+<h2>
+	<br>
+	<br>
+	Drag and Drop<br>
+	&nbsp;</h2>
+<p>
+	Ajax iTunes Search even lets you re-order submitted tracks by a built-in drag &amp; drop system. To do so:</p>
+<ol>
+	<li>
+		Head over to the &quot;Tracks&quot; menu item</li>
+	<li>
+		Locate the submenu &quot;Order&quot;</li>
+	<li>
+		Drag the tracks in the desired position</li>
+</ol>
+<p>
+	<img alt="" src="assets/images/image_3.png"  >
+</p>
+<h2>
+	<br>
+	<br>
+	Statistics
+	<br>
+	&nbsp;
+</h2>
+<p>
+	Since v.2, statistic charts are available which evaluate the number of submitted tracks per day, month and year just to keep track of how things are going. There is no configuration for the statistic page.
+</p>
+</section>
+<section id="advanced">
+	<div class="page-header"><h3>Advanced</h3><hr class="notop"></div>
+<h2>
+	Javascript</h2>
+<p>
+	Ajax iTunes Search makes use of the following jQuery plugins:</p>
+<ol>
+	<li>
+		pNotify (<a href="http://pinesframework.org/pnotify/">http://pinesframework.org/pnotify/</a>)</li>
+	<li>
+		Chosen(<a href="http://harvesthq.github.io/chosen/">http://harvesthq.github.io/chosen/</a>)</li>
+	<li>
+		isotope (<a href="http://isotope.metafizzy.co/">http://isotope.metafizzy.co/</a>)</li>
+	<li>
+		jPlayer(<a href="http://jplayer.org/">http://jplayer.org/</a>)</li>
+</ol>
+<p>
+	These plugins enhance the functionality of Ajax iTunes Search. Developers, proficient with PHP and jQuery may deregister the js-scripts but will then also need to adapt the plugin Javascript files accordingly.&nbsp;</p>
+<h2>
+	<br>
+	CSS</h2>
+<p>
+	The plugin both makes use of CSS-files included in the front and back end. All CSS files enqueued in the front end can be found in the /css folder. The only admin CSS file is located in /admin/css.&nbsp;</p>
+<ul>
+	<li>
+		options.css - generated CSS file, based on the user options</li>
+	<li>
+		style.css - main front end plugin styles</li>
+	<li>
+		audioplayer.css - stylesheet which takes care of jPlayer</li>
+	<li>
+		chosen.min.css - stylesheet necessary for the chosen plugin</li>
+	<li>
+		font-awesome.min.css - handles font-awesome icons</li>
+</ul>
+<p>
+	&nbsp;</p>
+<h2>
+	PHP Files</h2>
+<p>
+	The main php funtions files are located in the /lib folder:</p>
+<ul>
+	<li>
+		lm-ajax-form.php - displays the search form</li>
+	<li>
+		lm-comment.php - enhances WP&#39;s default comment structure (currently in beta)</li>
+	<li>
+		lm-functions.php - main functions and setup</li>
+	<li>
+		lm-rating.php - specific functions for ajax star rating</li>
+	<li>
+		lm-shortcodes.php - registers all shortcodes available through the shortcode helper </li>
+	<li>
+		lm-widget.php - registers the Ajax Search Widget</li>
+	<li>
+		post-type.php - registers the custom post type and taxonomies</li>
+</ul>
+</section>
+<section id="legal">
+	<div class="page-header"><h3>Legal</h3><hr class="notop"></div>
+<p>
+	As Ajax iTunes Search makes use of the iTunes Search API, the plugin is governed by Apple&#39;s legal policy. According to them:&nbsp;<br>
+	<br>
+	&quot;[...]&nbsp;<span style="color: rgb(51, 51, 51); font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif; line-height: 18px;">Affiliate may use certain promotional content as may be provided by Apple, including previews of songs and music videos, album art, and App icons (&quot;Promo Content&quot;), for the purposes of promoting the subject of the Promo Content; provided such Promo Content: (i) is placed only on pages that promote the content on which the Promo Content is based; (ii) is proximate to a &quot;Download on iTunes&quot; or &quot;Available on the App Store&quot; badge (as approved by Apple) that acts as a link directly to pages within iTunes or the App Store where consumers can purchase the promoted content; (iii) includes attribution indicating the Promo Content was &quot;provided courtesy of iTunes&quot; if such Promo Content includes song or music video previews; (iv) is streamed only, and not downloaded, saved, cached, or synchronized with video, if such Promo Content includes song or music video previews; (v) is not used for independent entertainment value apart from its promotional purpose; and (vi) is not used to promote any other goods or services. Affiliate acknowledges that Apple provides the Promo Content &quot;as is,&quot; and disclaims any and all representations or warranties, including, but not limited to, non-infringement. Affiliate shall forward any claims received in connection with the Promo Content to Apple immediately upon receipt, and will remove any Promo Content immediately upon request from Apple. [...] &quot;<br>
+	<br>
+	I.e. you <strong>must not</strong>:&nbsp;</span></p>
+<ul>
+	<li>
+		<span style="color: rgb(51, 51, 51); font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif; line-height: 18px;">Remove copyright notices</span></li>
+	<li>
+		<span style="color: rgb(51, 51, 51); font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif; line-height: 18px;">Use the plugin for self-promotion. In fact you may only promote the iTunes Store</span></li>
+	<li>
+		<span style="color: rgb(51, 51, 51); font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif; line-height: 18px;">Infringe any copyright</span></li>
+	<li>
+		<font color="#333333" face="Lucida Grande, Lucida Sans Unicode, Helvetica, Arial, Verdana, sans-serif"><span style="line-height: 18px;">Remove the links pointing to the iTunes Store</span></font></li>
+	<li>
+		Download the Song Previews and store them on your site</li>
+</ul>
+<p>
+	If you have any legal conercs about the usage of the plugin, please talk to a lawer or ask Apple for help. Please note that the site operator is responsible for what information is being displayed.</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	Once again, thank you so much for purchasing this plugin. As I said at the beginning, I&#39;d be glad to help you if you have any questions relating to this plugin. No guarantees, but I&#39;ll do my best to assist. If you have a more general question relating to the plugins on codecanyon, you might consider visiting the forums and asking your question in the &quot;Item Discussion&quot; section.</p>
+<p>
+	<strong>Leander Melms<br>
+	<br>
+	Support: http://leandermelms.me/support/</strong></p>
+</section>
+
+
+
+    <hr />
+
+<footer>
+    <p>Copyright Leander Melms 2013 made with the <a href="http://rxa.li/documenter">Documenter v2.0</a></p>
+</footer>
+
+</div><!-- /container --> 
+
+<!-- Le javascript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script>document.createElement('section');var duration='500',easing='swing';</script>
+<script src="assets/js/jquery.js"></script> 
+<script src="assets/js/jquery.scrollTo.js"></script>
+<script src="assets/js/jquery.easing.js"></script>
+<script src="assets/js/scripts.js"></script> 
+<script src="assets/js/google-code-prettify/prettify.js"></script> 
+<script src="assets/js/bootstrap-min.js"></script> 
+</body>
+</html>
